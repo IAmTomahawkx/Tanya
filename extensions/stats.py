@@ -81,7 +81,6 @@ class Stats(commands.Cog):
         apost = "'"  # stupid fstrings
 
         fmt = (
-
             f"{'You have' if _user == ctx.author else f'{_user} has'} played {len(games)} game{'s' if len(games) != 1 else ''}"
             f"{' in this server' if only_this_server else ''}, won {wins} game{'s' if wins != 1 else ''}, "
             f"killed {kills-suicides} {'people' if kills-suicides != 1 else 'person'}, died {deaths} time{'s' if deaths != 1 else ''}, committed suicide "
